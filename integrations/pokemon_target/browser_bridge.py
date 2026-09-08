@@ -33,8 +33,8 @@ def normalize(observation, product, now):
             or observation.get('error') or not observation.get('evidence')
             or observation.get('seller') != seller):
         return 'unknown', False
-    # Store-only, preorders, unavailable delivery locations and ambiguous controls
-    # cannot establish an online stock transition.
+    # Collectors may map an explicit disabled store-only control to online
+    # out_of_stock; preorders and ambiguous fulfillment remain unknown.
     status = observation.get('status', 'unknown')
     if status not in ('in_stock', 'out_of_stock'):
         return 'unknown', False

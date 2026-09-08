@@ -12,7 +12,7 @@ class BestBuyTests(unittest.TestCase):
 
     def test_live_store_only_counterexample(self):
         controls = [{'testid': 'pdp-in-store-only-6643669', 'text': 'In Store Only', 'disabled': True}]
-        self.assertEqual(extract(self.product, self.expected, controls)['status'], 'unknown')
+        self.assertEqual(extract(self.product, self.expected, controls)['status'], 'out_of_stock')
 
     def test_recommendation_cart_cannot_trigger(self):
         self.offer['availableDeliveryMethod'] = ['https://schema.org/DeliveryModeParcelService']

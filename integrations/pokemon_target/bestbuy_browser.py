@@ -23,7 +23,12 @@ def extract(product, expected, controls):
     result.update(seller='Best Buy', price=offer.get('price'), currency=offer.get('priceCurrency'),
                   evidence=json.dumps({'offer': offer, 'controls': controls}))
     relevant = [c for c in controls if expected['sku'] in c.get('testid', '')]
-    if any(c['text'].strip().lower() in ('in store only', 'coming soon', 'pre-order', 'pre-order now') for c in relevant):
+    if any(c['text'].strip().lower() == 'in store only' and c.get('disabled') is True for c in relevant):
+        # This is an explicit absence of online availability, even if physical
+        # store inventory causes the offer's schema.org status to say InStock.
+        result['status'] = 'out_of_stock'
+        return result
+    if any(c['text'].strip().lower() in ('coming soon', 'pre-order', 'pre-order now') for c in relevant):
         return result
     if any(c['text'].strip().lower() == 'sold out' for c in relevant):
         result['status'] = 'out_of_stock'

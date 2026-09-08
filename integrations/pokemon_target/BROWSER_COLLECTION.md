@@ -47,6 +47,21 @@ in_stock, shipping_available true, seller Best Buy and price $29.99. No email wa
 sent for this validation. Sixteen tests pass. This proves parsing of a live
 shippable offer, not that any recent TCG SKU is available or has restocked.
 
+Online baseline correction: a disabled, exact-SKU In Store Only purchase control
+now establishes online out_of_stock, rather than unknown. This is directly
+observed online unavailability; if a later observation confirms shipping and an
+enabled matching purchase control, it can legitimately trigger a transition.
+Coming-soon/preorder controls and ambiguous data still stay unknown. Earlier
+experiment descriptions above reflect the classification at the time of testing.
+
+Search discovery is not complete. A ten-page exploratory run found only 43
+Pokémon candidates because later pages yielded four product cards each. The
+revised `discover_bestbuy.py` records expected and actual counts per page, but
+still encountered incomplete loading and was stopped. Mouse-wheel scrolling
+loaded additional cards in one diagnostic run but did not reliably resolve the
+problem. `bestbuy_discovered.json` is explicitly unverified discovery output and
+must not replace the production catalog or be counted as full two-year coverage.
+
 `browser_bridge.py` ingests product-page observations from a browser collector.
 It uses separate retailer/SKU identities in a persistent SQLite database and the
 existing local email outbox. Initial in-stock observations are silent. Only an

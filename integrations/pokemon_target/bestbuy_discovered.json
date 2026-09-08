@@ -1,0 +1,54 @@
+{
+  "coverage": "Discovery candidates only; release dates, MSRP and live seller/stock require verification. Not a production watchlist.",
+  "observed_at": 1788862270.608972,
+  "pages": [
+    {
+      "url": "https://www.bestbuy.com/site/searchpage.jsp?id=pcat17071&qp=bbyonly_facet%3DSold+%26+shipped+by%7EBest+Buy&st=pokemon+trading+card",
+      "expected": 18,
+      "product_links": 4,
+      "complete": false
+    }
+  ],
+  "products": [
+    {
+      "retailer": "bestbuy",
+      "sku": "6679640",
+      "title": "Pok\u00e9mon - Trading Card Game: First Partner Illustration Collection Series 3",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-first-partner-illustration-collection-series-3/JJG2TL8J6T/sku/6679640",
+      "release_date": null,
+      "release_source": null,
+      "msrp": null,
+      "msrp_source": null
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6678361",
+      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Elite Trainer Box",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-elite-trainer-box/JJG2TL8J45/sku/6678361",
+      "release_date": null,
+      "release_source": null,
+      "msrp": null,
+      "msrp_source": null
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6616793",
+      "title": "Pok\u00e9mon - Trading Card Game: Charizard ex Special Collection",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-charizard-ex-special-collection/JJG2TLCVTX/sku/6616793",
+      "release_date": null,
+      "release_source": null,
+      "msrp": null,
+      "msrp_source": null
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6621081",
+      "title": "Pok\u00e9mon - Trading Card Game: Scarlet & Violet Prismatic Evolutions Super-Premium Collection",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-scarlet-violet-prismatic-evolutions-super-premium-collection/JJG2TL23CW/sku/6621081",
+      "release_date": null,
+      "release_source": null,
+      "msrp": null,
+      "msrp_source": null
+    }
+  ]
+}
