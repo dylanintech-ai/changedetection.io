@@ -2,7 +2,13 @@
 
 Status September 8, 2026: the ingestion adapter is implemented and tested. Both
 retailers load in the connected browser. There is no standalone browser collector
-running, no complete catalog, and no verified live stock email yet. Walmart's
+running and no complete catalog. A one-time live-stock control email was delivered
+successfully to the configured recipient on September 8 (Gmail confirmed SENT
+and INBOX). The control was Walmart SKU 20895014480, a $39.97 two-deck bundle,
+explicitly labeled as older 2023 products outside the production watchlist and
+not a newly detected restock. The product page showed sold and shipped by
+Walmart.com, enabled Add to cart and free shipping September 11 to the browser's
+07090 location. The durable outbox marks this test sent; never repeat it. Walmart's
 plain HTTP response is a robot challenge. Best Buy first-party recent TCG offers
 checked so far are store-only or coming soon.
 
@@ -33,7 +39,6 @@ python3 browser_bridge.py --observations observations.json \
 ```
 
 Remaining work: automate fresh browser collection, expand the catalog, verify
-price ceilings, and demonstrate a qualifying live email. A clearly labeled
-one-time existing-stock test is authorized, but must use a real recent Pokémon
-TCG product with first-party shipping at or below verified MSRP; do not fabricate
-an out-of-stock baseline to trigger it.
+price ceilings, and demonstrate a qualifying recent-product restock email.
+The existing-stock control test is complete; do not fabricate an out-of-stock
+baseline or send additional control emails to substitute for that milestone.
