@@ -12,6 +12,23 @@ Walmart.com, enabled Add to cart and free shipping September 11 to the browser's
 plain HTTP response is a robot challenge. Best Buy first-party recent TCG offers
 checked so far are store-only or coming soon.
 
+Standalone collector experiment: `walmart_browser.py` with ordinary visible Chrome
+read structured product-page data successfully. Headless Chrome was challenged.
+Three visible-browser rounds 30 seconds apart yielded: round 1 Surging Sparks
+out of stock and control bundle in stock; round 2 Surging Sparks challenged and
+control still in stock; round 3 both challenged. This is partial, intermittent
+access, not reliable continuous monitoring. Challenge observations stay unknown;
+the collector now stops the round and backs off at least ten minutes. No CAPTCHA
+solver, proxy service, or browser fingerprint modification is used.
+
+The first real Surging Sparks observation was persisted as a silent out-of-stock
+baseline in the local retailer state database. The older control SKU was rejected
+by the production catalog. The collector can feed the transition pipeline directly
+using `--state` and `--email-module`; its default one-cycle mode only writes results.
+Install `requirements-browser.txt` into the existing virtual environment; Chrome
+must already be installed. Twelve integration tests pass. Collector processes from
+this bounded experiment have exited; no continuous collector is running yet.
+
 `browser_bridge.py` ingests product-page observations from a browser collector.
 It uses separate retailer/SKU identities in a persistent SQLite database and the
 existing local email outbox. Initial in-stock observations are silent. Only an
