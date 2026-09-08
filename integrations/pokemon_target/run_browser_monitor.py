@@ -13,6 +13,16 @@ from browser_bridge import ingest
 from transitions import StockState
 
 
+def scheduled(catalog, latest, limit=2):
+    """Oldest attempted products first; errors cannot starve later SKUs."""
+    counts = {}
+    for key in sorted(catalog, key=lambda k: latest.get(k, {}).get('observed_at', 0)):
+        retailer = catalog[key]['retailer']
+        if counts.get(retailer, 0) < limit:
+            counts[retailer] = counts.get(retailer, 0) + 1
+            yield key, catalog[key]
+
+
 async def run(args):
     # A second process must not race the same transition/outbox processing.
     lock = args.state.with_suffix('.lock').open('w')
@@ -41,10 +51,12 @@ async def run(args):
                     catalog = {p['retailer'] + ':' + p['sku']: p for p in catalog
                                if p['retailer'] in args.retailers}
                     outcomes = []
-                    for key, product in catalog.items():
+                    for key, product in scheduled(catalog, latest):
                         retailer = product['retailer']
                         if cooldown.get(retailer, 0) > time.time():
                             continue
+                        if outcomes:
+                            await asyncio.sleep(5)
                         observation = await collectors[retailer](page, product)
                         outcome = ingest([observation], catalog, state, email.enqueue, email.cancel_event)
                         record = {k: v for k, v in observation.items() if k != 'evidence'}
@@ -59,7 +71,7 @@ async def run(args):
                               'catalog_count': len(catalog), 'catalog_keys': list(catalog),
                               'latest_observations': latest, 'observations': outcomes,
                               'cooldown_until': cooldown,
-                              'note': 'Queues emails; Gmail delivery is a separate worker. Catalog may be incomplete.'}
+                              'note': 'Queues emails for the standalone SMTP worker. At most two products per retailer per cycle. Catalog may be incomplete.'}
                     temporary = args.health.with_suffix('.tmp')
                     temporary.write_text(json.dumps(health, indent=2))
                     temporary.replace(args.health)

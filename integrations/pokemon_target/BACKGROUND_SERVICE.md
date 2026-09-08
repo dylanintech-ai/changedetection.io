@@ -4,7 +4,7 @@ The installed macOS user LaunchAgents run independently of Codex:
 
 | Label | Function |
 |---|---|
-| com.dylan.pokemon-browser-monitor | Continuous browser collector, 60-second cycles, automatic crash restart, persistent retailer cooldowns |
+| com.dylan.pokemon-browser-monitor | Continuous browser collector, 60-second cycles, up to two products per retailer per cycle in oldest-attempt order, automatic crash restart, persistent retailer cooldowns |
 | com.dylan.pokemon-monitor-watchdog | Independent collector health check every 60 seconds |
 | com.dylan.pokemon-mailer | Direct Gmail SMTP delivery every 30 seconds |
 

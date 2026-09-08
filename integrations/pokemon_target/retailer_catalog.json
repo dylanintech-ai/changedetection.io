@@ -76,9 +76,9 @@
       "url": "https://www.walmart.com/ip/Pokemon-Trading-Card-Games-Scarlet-Violet-8-Surging-Sparks-Booster-Bundle/10692754252",
       "release_date": "2024-11-08",
       "release_source": "https://www.pokemon.com/us/news/see-new-cards-from-the-pokemon-tcg-scarlet-violet-surging-sparks-expansion",
-      "msrp": null,
-      "msrp_source": null,
-      "last_review_note": "2026-09-08: Walmart-filtered offer $28.97, shipping Out of stock. Product page omits current seller name; do not infer seller from reviews."
+      "msrp": 26.94,
+      "msrp_source": "https://thehobbybin.com/blogs/pokemon-tcg-guides/pokemon-msrp-drop-event-2-destined-rivals-surging-sparks-booster-bundles",
+      "last_review_note": "2026-09-08: live Walmart browser confirmed first-party shipping out of stock at $28.97; later challenge returns unknown. Sourced MSRP $26.94; current $28.97 price is above ceiling and must not alert."
     }
   ]
 }
