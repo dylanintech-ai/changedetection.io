@@ -1,89 +1,9 @@
 {
-  "coverage": "Initial verified product identities only; not a complete two-year catalog. Missing MSRP metadata deliberately disables alerts.",
   "products": [
     {
       "retailer": "bestbuy",
-      "sku": "6678361",
-      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Elite Trainer Box",
-      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-elite-trainer-box/JJG2TL8J45/sku/6678361",
-      "release_date": "2026-07-17",
-      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
-      "msrp": 49.99,
-      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-elite-trainer-box",
-      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
-    },
-    {
-      "retailer": "bestbuy",
-      "sku": "6678359",
-      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Booster Bundle",
-      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-booster-bundle/JJG2TL8JVY/sku/6678359",
-      "release_date": "2026-07-17",
-      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
-      "msrp": 26.94,
-      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-booster-bundle",
-      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
-    },
-    {
-      "retailer": "bestbuy",
-      "sku": "6678362",
-      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Booster Box (36 Packs)",
-      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-booster-box-36-packs/JJG2TL8C7R/sku/6678362",
-      "release_date": "2026-07-17",
-      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
-      "msrp": 161.64,
-      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-booster-display-box",
-      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
-    },
-    {
-      "retailer": "bestbuy",
-      "sku": "6678360",
-      "title": "Pok\u00e9mon - Mega Evolution\u2014 Pitch Black Sleeved Booster (1 Sleeved Booster Per Order) - Styles May Vary",
-      "url": "https://www.bestbuy.com/product/pokemon-mega-evolution-pitch-black-sleeved-booster-1-sleeved-booster-per-order-styles-may-vary/JJG2TL32P8/sku/6678360",
-      "release_date": "2026-07-17",
-      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
-      "msrp": 4.49,
-      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-sleeved-booster-pack",
-      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
-    },
-    {
-      "retailer": "bestbuy",
-      "sku": "6643669",
-      "title": "Team Rocket's Mewtwo ex League Battle Deck",
-      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-team-rockets-mewtwo-ex-league-battle-deck/JJG2TL2Q3F/sku/6643669",
-      "release_date": "2025-12-12",
-      "release_source": "https://www.pokemon.com/uk/pokemon-tcg/product-gallery/pokemon-tcg-team-rockets-mewtwo-ex-league-battle-deck",
-      "msrp": 29.99,
-      "msrp_source": "https://www.pokebeach.com/2025/08/team-rockets-mewtwo-ex-league-battle-deck-releasing-in-november",
-      "last_review_note": "2026-09-08: Sold by Best Buy, $29.99, disabled In Store Only button. Online availability unknown; no alert.",
-      "msrp_note": "Announced retail price; use the separately sourced final December release date, not the original November date in this price announcement."
-    },
-    {
-      "retailer": "bestbuy",
-      "sku": "6673248",
-      "title": "Mega Lucario ex League Battle Deck",
-      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-lucario-ex-league-battle-deck/JJG2TLXH2X/sku/6673248",
-      "release_date": "2026-05-22",
-      "release_source": "https://www.pokemon.com/uk/pokemon-news/check-out-every-pokemon-tcg-product-release-in-may-2026",
-      "msrp": 29.99,
-      "msrp_source": "https://www.pokeguardian.com/3046607_mega-lucario-ex-league-battle-deck-revealed",
-      "last_review_note": "2026-09-08: exact first-party product page and structured offer $29.99; disabled SKU-specific In Store Only button. Structured InStock is not online stock. MSRP independently corroborated by two trade publications.",
-      "msrp_corroboration": "https://icv2.com/articles/news/view/61876/secret-box-catches-reprint-new-pokemon-tcg-league-battle-deck"
-    },
-    {
-      "retailer": "walmart",
-      "sku": "10692754252",
-      "title": "Surging Sparks Booster Bundle",
-      "url": "https://www.walmart.com/ip/Pokemon-Trading-Card-Games-Scarlet-Violet-8-Surging-Sparks-Booster-Bundle/10692754252",
-      "release_date": "2024-11-08",
-      "release_source": "https://www.pokemon.com/us/news/see-new-cards-from-the-pokemon-tcg-scarlet-violet-surging-sparks-expansion",
-      "msrp": 26.94,
-      "msrp_source": "https://thehobbybin.com/blogs/pokemon-tcg-guides/pokemon-msrp-drop-event-2-destined-rivals-surging-sparks-booster-bundles",
-      "last_review_note": "2026-09-08: live Walmart browser confirmed first-party shipping out of stock at $28.97; later challenge returns unknown. Sourced MSRP $26.94; current $28.97 price is above ceiling and must not alert."
-    },
-    {
-      "retailer": "bestbuy",
       "sku": "6685559",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Elite Trainer Box",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Elite Trainer Box",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-elite-trainer-box/JJG2TL8XCJ/sku/6685559",
       "release_date": "2026-09-16",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-elite-trainer-box/JJG2TL8XCJ/sku/6685559",
@@ -96,7 +16,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685563",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Ultra-Premium Collection Day Or Night (1 Ultra-Premium Collection per Order) - Styles May Vary",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Ultra-Premium Collection Day Or Night (1 Ultra-Premium Collection per Order) - Styles May Vary",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-ultra-premium-collection-day-or-night-1-ultra-premium-collection-per-order-styles-may-vary/JJG2TL8254/sku/6685563",
       "release_date": "2026-11-06",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-ultra-premium-collection-day-or-night-1-ultra-premium-collection-per-order-styles-may-vary/JJG2TL8254/sku/6685563",
@@ -109,7 +29,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685573",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Booster Bundle",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Booster Bundle",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-booster-bundle/JJG2TL8X2V/sku/6685573",
       "release_date": "2026-10-02",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-booster-bundle/JJG2TL8X2V/sku/6685573",
@@ -122,7 +42,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685564",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Figure Collection Mew or Mewto (1 Figure Collection per Order) - Styles May Vary",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Figure Collection Mew or Mewto (1 Figure Collection per Order) - Styles May Vary",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-figure-collection-mew-or-mewto-1-figure-collection-per-order-styles-may-vary/JJG2TL8XX8/sku/6685564",
       "release_date": "2026-11-06",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-figure-collection-mew-or-mewto-1-figure-collection-per-order-styles-may-vary/JJG2TL8XX8/sku/6685564",
@@ -135,7 +55,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685565",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Poster Collection",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Poster Collection",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-poster-collection/JJG2TL8X7G/sku/6685565",
       "release_date": "2026-09-16",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-poster-collection/JJG2TL8X7G/sku/6685565",
@@ -148,7 +68,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685572",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Mini Tin (1 Mini Tin per Order) - Styles May Vary",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Mini Tin (1 Mini Tin per Order) - Styles May Vary",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-mini-tin-1-mini-tin-per-order-styles-may-vary/JJG2TL8X6V/sku/6685572",
       "release_date": "2026-10-02",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-mini-tin-1-mini-tin-per-order-styles-may-vary/JJG2TL8X6V/sku/6685572",
@@ -161,7 +81,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685560",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Sylveon ex Box or Greninja ex Box (1 Ex Box per Order) - Styles May Vary",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Sylveon ex Box or Greninja ex Box (1 Ex Box per Order) - Styles May Vary",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-sylveon-ex-box-or-greninja-ex-box-1-ex-box-per-order-styles-may-vary/JJG2TL82VJ/sku/6685560",
       "release_date": "2026-09-16",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-sylveon-ex-box-or-greninja-ex-box-1-ex-box-per-order-styles-may-vary/JJG2TL82VJ/sku/6685560",
@@ -174,7 +94,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685562",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Ditto Premium Collection",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Ditto Premium Collection",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-ditto-premium-collection/JJG2TL82YW/sku/6685562",
       "release_date": "2026-11-06",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-ditto-premium-collection/JJG2TL82YW/sku/6685562",
@@ -187,7 +107,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685567",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Knock Out Collection",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Knock Out Collection",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-knock-out-collection/JJG2TL3WZ5/sku/6685567",
       "release_date": "2026-09-16",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-knock-out-collection/JJG2TL3WZ5/sku/6685567",
@@ -200,7 +120,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685561",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Tin (1 Tin per Order) - Styles May Vary",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Tin (1 Tin per Order) - Styles May Vary",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-tin-1-tin-per-order-styles-may-vary/JJG2TL3Y7Y/sku/6685561",
       "release_date": "2026-12-04",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-tin-1-tin-per-order-styles-may-vary/JJG2TL3Y7Y/sku/6685561",
@@ -214,7 +134,7 @@
     {
       "retailer": "bestbuy",
       "sku": "6685574",
-      "title": "Pok\u00e9mon - Trading Card Game: 30th Celebration Tech Sticker Collection (1 Tech Sticker Collection per Order) - Styles May Vary",
+      "title": "Pokémon - Trading Card Game: 30th Celebration Tech Sticker Collection (1 Tech Sticker Collection per Order) - Styles May Vary",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-tech-sticker-collection-1-tech-sticker-collection-per-order-styles-may-vary/JJG2TL8X74/sku/6685574",
       "release_date": "2026-09-16",
       "release_source": "https://www.bestbuy.com/product/pokemon-trading-card-game-30th-celebration-tech-sticker-collection-1-tech-sticker-collection-per-order-styles-may-vary/JJG2TL8X74/sku/6685574",

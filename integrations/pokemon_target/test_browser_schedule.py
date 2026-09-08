@@ -1,8 +1,14 @@
 import unittest
-from run_browser_monitor import scheduled
+from datetime import date
+from run_browser_monitor import scheduled, active_products
 
 
 class ScheduleTests(unittest.TestCase):
+    def test_upcoming_activates_on_release_without_slowing_current_checks(self):
+        products = [{'sku':'current'}, {'sku':'future', 'watch_from':'2026-09-16'}]
+        self.assertEqual(active_products(products, date(2026,9,8)), products[:1])
+        self.assertEqual(active_products(products, date(2026,9,16)), products)
+
     def test_failures_do_not_starve_unchecked_products(self):
         catalog = {str(i): {'retailer': 'bestbuy'} for i in range(6)}
         latest = {'0': {'observed_at': 10}, '1': {'observed_at': 11, 'error': 'Error'}}

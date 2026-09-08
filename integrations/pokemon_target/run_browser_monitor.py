@@ -1,6 +1,7 @@
 """Run browser observations through durable transition and email-queue processing."""
 import argparse
 import asyncio
+from datetime import date
 import fcntl
 import importlib.util
 import json
@@ -21,6 +22,10 @@ def scheduled(catalog, latest, limit=2):
         if counts.get(retailer, 0) < limit:
             counts[retailer] = counts.get(retailer, 0) + 1
             yield key, catalog[key]
+
+
+def active_products(products, today):
+    return [p for p in products if date.fromisoformat(p.get('watch_from', '1970-01-01')) <= today]
 
 
 async def run(args):
@@ -48,6 +53,8 @@ async def run(args):
                 while args.cycles == 0 or cycle < args.cycles:
                     started = time.time()
                     catalog = json.loads(args.catalog.read_text())['products']
+                    upcoming_count = len(catalog) - len(active_products(catalog, date.today()))
+                    catalog = active_products(catalog, date.today())
                     catalog = {p['retailer'] + ':' + p['sku']: p for p in catalog
                                if p['retailer'] in args.retailers}
                     outcomes = []
@@ -69,6 +76,7 @@ async def run(args):
                     cycle += 1
                     health = {'cycle': cycle, 'started_at': started, 'completed_at': time.time(),
                               'catalog_count': len(catalog), 'catalog_keys': list(catalog),
+                              'upcoming_count': upcoming_count,
                               'latest_observations': latest, 'observations': outcomes,
                               'cooldown_until': cooldown,
                               'note': 'Queues emails for the standalone SMTP worker. At most two products per retailer per cycle. Catalog may be incomplete.'}
