@@ -5,7 +5,8 @@ import time
 
 
 class StockState:
-    def __init__(self, path):
+    def __init__(self, path, namespace='target'):
+        self.namespace = namespace
         self.db = sqlite3.connect(path, timeout=15)
         self.db.executescript('''
           CREATE TABLE IF NOT EXISTS stock (
@@ -34,7 +35,7 @@ class StockState:
             if status == 'out_of_stock':
                 self.db.execute("UPDATE events SET status='cancelled' WHERE sku=? AND status='pending'", (sku,))
             if transition and eligible:
-                event_id = f'target:{sku}:{generation}'
+                event_id = f'{self.namespace}:{sku}:{generation}'
                 self.db.execute('INSERT OR IGNORE INTO events VALUES (?,?,?,?,?,?)',
                                 (event_id, sku, now, now + 180, json.dumps(payload), 'pending'))
                 return 'restock'

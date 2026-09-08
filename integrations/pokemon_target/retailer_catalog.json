@@ -1,0 +1,38 @@
+{
+  "coverage": "Initial verified product identities only; not a complete two-year catalog. Missing MSRP metadata deliberately disables alerts.",
+  "products": [
+    {
+      "retailer": "bestbuy",
+      "sku": "6643669",
+      "title": "Team Rocket's Mewtwo ex League Battle Deck",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-team-rockets-mewtwo-ex-league-battle-deck/JJG2TL2Q3F/sku/6643669",
+      "release_date": "2025-12-12",
+      "release_source": "https://www.pokemon.com/uk/pokemon-tcg/product-gallery/pokemon-tcg-team-rockets-mewtwo-ex-league-battle-deck",
+      "msrp": null,
+      "msrp_source": null,
+      "last_review_note": "2026-09-08: Sold by Best Buy, $29.99, disabled In Store Only button. Online availability unknown; no alert."
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6673248",
+      "title": "Mega Lucario ex League Battle Deck",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-lucario-ex-league-battle-deck/JJG2TLXH2X/sku/6673248",
+      "release_date": "2026-05-22",
+      "release_source": "https://www.pokemon.com/uk/pokemon-news/check-out-every-pokemon-tcg-product-release-in-may-2026",
+      "msrp": null,
+      "msrp_source": null,
+      "last_review_note": "2026-09-08: first-party search result $29.99 In Store Only. Product-page verification required."
+    },
+    {
+      "retailer": "walmart",
+      "sku": "10692754252",
+      "title": "Surging Sparks Booster Bundle",
+      "url": "https://www.walmart.com/ip/Pokemon-Trading-Card-Games-Scarlet-Violet-8-Surging-Sparks-Booster-Bundle/10692754252",
+      "release_date": "2024-11-08",
+      "release_source": "https://www.pokemon.com/us/news/see-new-cards-from-the-pokemon-tcg-scarlet-violet-surging-sparks-expansion",
+      "msrp": null,
+      "msrp_source": null,
+      "last_review_note": "2026-09-08: Walmart-filtered offer $28.97, shipping Out of stock. Product page omits current seller name; do not infer seller from reviews."
+    }
+  ]
+}
