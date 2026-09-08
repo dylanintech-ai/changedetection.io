@@ -39,6 +39,14 @@ detection still needs validation against a real available Best Buy offer; do not
 claim the synthetic positive test proves live restock coverage. Mega Lucario's
 $29.99 MSRP is now corroborated by PokeGuardian and ICv2 in the catalog.
 
+Positive Best Buy validation: SKU 6611691 (a mouse pad, excluded from TCG watches)
+has an enabled `pdp-add-to-cart-6611691` control and `availableDeliveryMethod`
+containing the literal `SHIPPING`. This revealed and fixed an unsupported value
+in the collector. Running the actual collector on that live page now returns
+in_stock, shipping_available true, seller Best Buy and price $29.99. No email was
+sent for this validation. Sixteen tests pass. This proves parsing of a live
+shippable offer, not that any recent TCG SKU is available or has restocked.
+
 `browser_bridge.py` ingests product-page observations from a browser collector.
 It uses separate retailer/SKU identities in a persistent SQLite database and the
 existing local email outbox. Initial in-stock observations are silent. Only an

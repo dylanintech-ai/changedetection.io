@@ -27,6 +27,14 @@ class BestBuyTests(unittest.TestCase):
         controls = [{'testid': 'pdp-sold-out-6643669', 'text': 'Sold Out', 'disabled': True}]
         self.assertEqual(extract(self.product, self.expected, controls)['status'], 'out_of_stock')
 
+    def test_live_shipping_control_format(self):
+        # Format observed on Best Buy SKU 6611691; not a production TCG product.
+        self.offer['availableDeliveryMethod'] = ['SHIPPING']
+        controls = [{'testid': 'pdp-add-to-cart-6643669', 'text': 'Add to cart', 'disabled': False}]
+        self.assertEqual(extract(self.product, self.expected, controls)['status'], 'in_stock')
+        controls[0]['disabled'] = True
+        self.assertEqual(extract(self.product, self.expected, controls)['status'], 'unknown')
+
 
 if __name__ == '__main__':
     unittest.main()

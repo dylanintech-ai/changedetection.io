@@ -29,7 +29,7 @@ def extract(product, expected, controls):
         result['status'] = 'out_of_stock'
         return result
     # Structured InStock alone is insufficient: live store-only offers also say it.
-    shipping = any(str(method).rstrip('/').split('/')[-1] in ('DeliveryModeParcelService',)
+    shipping = any(str(method).rstrip('/').split('/')[-1] in ('DeliveryModeParcelService', 'SHIPPING')
                    for method in offer.get('availableDeliveryMethod', []))
     cart = any(c['text'].strip().lower() == 'add to cart' and c.get('disabled') is False for c in relevant)
     if shipping and cart and offer.get('availability', '').endswith('/InStock'):
