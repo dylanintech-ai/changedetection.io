@@ -29,6 +29,16 @@ Install `requirements-browser.txt` into the existing virtual environment; Chrome
 must already be installed. Twelve integration tests pass. Collector processes from
 this bounded experiment have exited; no continuous collector is running yet.
 
+Best Buy standalone experiment: both catalog decks loaded in ordinary visible
+Chrome without an API key. `bestbuy_browser.py` selects the exact SKU's JSON-LD
+offer and purchase buttons. Both live offers said schema.org/InStock while showing
+disabled SKU-specific In Store Only controls, so both correctly remained unknown
+for online shipping. Fifteen tests pass, including this live counterexample and
+rejection of unrelated recommendation purchase buttons. Positive shipping
+detection still needs validation against a real available Best Buy offer; do not
+claim the synthetic positive test proves live restock coverage. Mega Lucario's
+$29.99 MSRP is now corroborated by PokeGuardian and ICv2 in the catalog.
+
 `browser_bridge.py` ingests product-page observations from a browser collector.
 It uses separate retailer/SKU identities in a persistent SQLite database and the
 existing local email outbox. Initial in-stock observations are silent. Only an

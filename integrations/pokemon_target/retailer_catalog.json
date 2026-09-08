@@ -19,9 +19,10 @@
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-lucario-ex-league-battle-deck/JJG2TLXH2X/sku/6673248",
       "release_date": "2026-05-22",
       "release_source": "https://www.pokemon.com/uk/pokemon-news/check-out-every-pokemon-tcg-product-release-in-may-2026",
-      "msrp": null,
-      "msrp_source": null,
-      "last_review_note": "2026-09-08: first-party search result $29.99 In Store Only. Product-page verification required."
+      "msrp": 29.99,
+      "msrp_source": "https://www.pokeguardian.com/3046607_mega-lucario-ex-league-battle-deck-revealed",
+      "last_review_note": "2026-09-08: exact first-party product page and structured offer $29.99; disabled SKU-specific In Store Only button. Structured InStock is not online stock. MSRP independently corroborated by two trade publications.",
+      "msrp_corroboration": "https://icv2.com/articles/news/view/61876/secret-box-catches-reprint-new-pokemon-tcg-league-battle-deck"
     },
     {
       "retailer": "walmart",
