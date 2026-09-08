@@ -3,6 +3,50 @@
   "products": [
     {
       "retailer": "bestbuy",
+      "sku": "6678361",
+      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Elite Trainer Box",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-elite-trainer-box/JJG2TL8J45/sku/6678361",
+      "release_date": "2026-07-17",
+      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
+      "msrp": 49.99,
+      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-elite-trainer-box",
+      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6678359",
+      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Booster Bundle",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-booster-bundle/JJG2TL8JVY/sku/6678359",
+      "release_date": "2026-07-17",
+      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
+      "msrp": 26.94,
+      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-booster-bundle",
+      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6678362",
+      "title": "Pok\u00e9mon - Trading Card Game: Mega Evolution - Pitch Black Booster Box (36 Packs)",
+      "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-mega-evolution-pitch-black-booster-box-36-packs/JJG2TL8C7R/sku/6678362",
+      "release_date": "2026-07-17",
+      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
+      "msrp": 161.64,
+      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-booster-display-box",
+      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
+    },
+    {
+      "retailer": "bestbuy",
+      "sku": "6678360",
+      "title": "Pok\u00e9mon - Mega Evolution\u2014 Pitch Black Sleeved Booster (1 Sleeved Booster Per Order) - Styles May Vary",
+      "url": "https://www.bestbuy.com/product/pokemon-mega-evolution-pitch-black-sleeved-booster-1-sleeved-booster-per-order-styles-may-vary/JJG2TL32P8/sku/6678360",
+      "release_date": "2026-07-17",
+      "release_source": "https://www.pokemon.com/uk/news/the-pokemon-tcg-mega-evolution-pitch-black-expansion-arrives-july-17-2026",
+      "msrp": 4.49,
+      "msrp_source": "https://celadoninfo.com/us/products/pitch-black-sleeved-booster-pack",
+      "last_review_note": "Identity discovered in first-party-filtered retailer results; collector must verify exact first-party offer and shipping state before any alert. MSRP from independent US product catalog."
+    },
+    {
+      "retailer": "bestbuy",
       "sku": "6643669",
       "title": "Team Rocket's Mewtwo ex League Battle Deck",
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-team-rockets-mewtwo-ex-league-battle-deck/JJG2TL2Q3F/sku/6643669",
