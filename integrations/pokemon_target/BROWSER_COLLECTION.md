@@ -108,3 +108,8 @@ Remaining work: automate fresh browser collection, expand the catalog, verify
 price ceilings, and demonstrate a qualifying recent-product restock email.
 The existing-stock control test is complete; do not fabricate an out-of-stock
 baseline or send additional control emails to substitute for that milestone.
+
+
+## Background rotation validation — 2026-09-08
+
+The launchd collector completed live direct-URL checks after the persisted cooldown expired. Best Buy Pitch Black sleeved booster, ETB and booster bundle, plus Mewtwo and Mega Lucario League decks, returned explicit online out-of-stock results. The 36-pack Pitch Black box returned a first-party $160.99 offer but ambiguous shipping availability; it correctly remained unknown. Walmart Surging Sparks returned first-party online out of stock at $28.97, then a subsequent request was challenged and triggered cooldown. Stable observations generated no new stock outbox entries. These checks validate fair rotation and conservative state handling, not complete coverage or a delivered real restock. Standalone mail still reports needs_setup.
