@@ -23,8 +23,10 @@ async def run(args):
     state = StockState(args.state, namespace='retail')
     collectors = {'bestbuy': bestbuy_collect, 'walmart': walmart_collect}
     cooldown = {}
+    latest = {}
     if args.health.exists():
         previous = json.loads(args.health.read_text())
+        latest = previous.get('latest_observations', {})
         cooldown = {name: until for name, until in previous.get('cooldown_until', {}).items()
                     if name in collectors and isinstance(until, (int, float)) and until > time.time()}
     cycle = 0
@@ -48,12 +50,14 @@ async def run(args):
                         record = {k: v for k, v in observation.items() if k != 'evidence'}
                         record['pipeline'] = outcome[key]
                         outcomes.append(record)
+                        latest[key] = record
                         print(json.dumps(record), flush=True)
                         if observation.get('error'):
                             cooldown[retailer] = time.time() + 600
                     cycle += 1
                     health = {'cycle': cycle, 'started_at': started, 'completed_at': time.time(),
-                              'catalog_count': len(catalog), 'observations': outcomes,
+                              'catalog_count': len(catalog), 'catalog_keys': list(catalog),
+                              'latest_observations': latest, 'observations': outcomes,
                               'cooldown_until': cooldown,
                               'note': 'Queues emails; Gmail delivery is a separate worker. Catalog may be incomplete.'}
                     temporary = args.health.with_suffix('.tmp')
