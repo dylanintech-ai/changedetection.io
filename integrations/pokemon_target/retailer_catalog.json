@@ -8,9 +8,10 @@
       "url": "https://www.bestbuy.com/product/pokemon-trading-card-game-team-rockets-mewtwo-ex-league-battle-deck/JJG2TL2Q3F/sku/6643669",
       "release_date": "2025-12-12",
       "release_source": "https://www.pokemon.com/uk/pokemon-tcg/product-gallery/pokemon-tcg-team-rockets-mewtwo-ex-league-battle-deck",
-      "msrp": null,
-      "msrp_source": null,
-      "last_review_note": "2026-09-08: Sold by Best Buy, $29.99, disabled In Store Only button. Online availability unknown; no alert."
+      "msrp": 29.99,
+      "msrp_source": "https://www.pokebeach.com/2025/08/team-rockets-mewtwo-ex-league-battle-deck-releasing-in-november",
+      "last_review_note": "2026-09-08: Sold by Best Buy, $29.99, disabled In Store Only button. Online availability unknown; no alert.",
+      "msrp_note": "Announced retail price; use the separately sourced final December release date, not the original November date in this price announcement."
     },
     {
       "retailer": "bestbuy",

@@ -62,6 +62,22 @@ loaded additional cards in one diagnostic run but did not reliably resolve the
 problem. `bestbuy_discovered.json` is explicitly unverified discovery output and
 must not replace the production catalog or be counted as full two-year coverage.
 
+`run_browser_monitor.py` now combines collection, immediate per-product transition
+processing, durable email queuing, a single-process lock, and persistent retailer
+cooldowns. `--cycles 0` requests continuous operation; the default is one cycle.
+It writes a health record with observations and cooldown deadlines, not a claim
+that skipped cycles performed successful checks. A live three-cycle Best Buy
+trial recorded Mewtwo unchanged/out-of-stock, then a request error on Lucario;
+the next two cycles skipped the retailer. A subsequent one-cycle process also
+skipped it, verifying the saved cooldown survived restart. No alert was queued.
+The error is preserved as unknown. Additional network error categories are now
+logged without response bodies or credential-bearing URLs.
+
+Both Best Buy deck catalog entries now have sourced $29.99 price ceilings.
+Mewtwo's price announcement preceded its release delay; its separately sourced
+December release date is retained. The monitor has not yet demonstrated sustained
+successful checking or a genuine restock; these bounded trials exited normally.
+
 `browser_bridge.py` ingests product-page observations from a browser collector.
 It uses separate retailer/SKU identities in a persistent SQLite database and the
 existing local email outbox. Initial in-stock observations are silent. Only an

@@ -60,8 +60,13 @@ async def collect(page, expected):
         product = next((p for p in products if str(p.get('sku')) == expected['sku']), {})
         return extract(product, expected, controls)
     except Exception as error:
+        message = str(error).splitlines()[0]
+        reason = next((name for name in ('ERR_HTTP2_PROTOCOL_ERROR', 'ERR_ABORTED',
+                       'ERR_CONNECTION_RESET', 'ERR_TIMED_OUT', 'ERR_NAME_NOT_RESOLVED',
+                       'Target closed', 'Execution context was destroyed') if name in message), None)
         return dict(retailer='bestbuy', sku=expected['sku'], url=expected['url'],
-                    observed_at=time.time(), status='unknown', error=type(error).__name__)
+                    observed_at=time.time(), status='unknown', error=type(error).__name__,
+                    error_reason=reason)
 
 
 async def main(args):
