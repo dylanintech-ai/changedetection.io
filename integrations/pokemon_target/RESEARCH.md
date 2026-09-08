@@ -12,8 +12,16 @@ releaseDate, salePrice and product links. Do not interpret inStoreAvailability
 as online stock; documentation says it can merely indicate an item is sold in
 stores. regularPrice is a retailer selling price, not verified MSRP.
 https://developer.bestbuy.com/ offers API-key registration. Opening its login
-redirected to Best Buy account sign-in; no authenticated API request performed.
-API coverage and latency for current Pokémon SKUs remain unverified.
+redirected to Best Buy account sign-in. Subsequent live verification succeeded
+using the user's connected Gmail account, but the authenticated dashboard at
+https://developer.bestbuy.com/secure/dashboard returned an Invalid Email page:
+"Free email and .edu addresses are not allowed at this time."
+No API key was issued and no authenticated inventory API request was performed.
+An existing API key or eligible non-free/non-.edu email is required to continue
+this route; the user has been asked. Do not repeat Gmail sign-in or request more
+verification emails: authentication succeeded and email eligibility is the blocker.
+API coverage and latency for current Pokémon SKUs remain unverified. The small
+repository's claim of free keys with instant approval is not reliable setup guidance.
 
 ## Repository audit
 
